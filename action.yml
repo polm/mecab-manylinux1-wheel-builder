@@ -1,0 +1,9 @@
+name: "MeCab manylinux1 Builder"
+author: "Paul O'Leary McCann"
+description: "Install MeCab and then build manylinux1 wheels"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    PLAT: 'manylinux1_x86_64'
+  entrypoint: './entrypoint.sh'
