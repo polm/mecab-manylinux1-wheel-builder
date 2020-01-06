@@ -16,7 +16,7 @@ for PYVER in cp37-cp37m cp38-cp38; do
   /opt/python/$PYVER/bin/pip install cython
 
   # build the wheels
-  /opt/python/$PYVER/bin/pip wheel /github/workspace -w /github/workspace/wheels || { echo "Failed while buiding $PYVER wheel"; exit 1 }
+  /opt/python/$PYVER/bin/pip wheel /github/workspace -w /github/workspace/wheels || { echo "Failed while buiding $PYVER wheel"; exit 1; }
 done
 
 # fix the wheels (bundles libs)
