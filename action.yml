@@ -6,4 +6,4 @@ runs:
   image: 'Dockerfile'
   env:
     PLAT: 'manylinux1_x86_64'
-  entrypoint: './entrypoint.sh'
+  entrypoint: '/entrypoint.sh'
