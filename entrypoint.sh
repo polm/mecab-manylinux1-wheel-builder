@@ -11,7 +11,7 @@ make
 make install
 
 # Build the wheels
-for PYVER in cp37-cp37m cp38-cp38; do
+for PYVER in cp35-cp35m cp36-cp36m cp37-cp37m cp38-cp38; do
   # install cython first
   /opt/python/$PYVER/bin/pip install cython
 
