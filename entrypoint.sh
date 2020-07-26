@@ -13,7 +13,7 @@ make install
 # Build the wheels
 for PYVER in cp35-cp35m cp36-cp36m cp37-cp37m cp38-cp38; do
   # install cython first
-  /opt/python/$PYVER/bin/pip install cython
+  /opt/python/$PYVER/bin/pip install cython setuptools-scm
 
   # build the wheels
   /opt/python/$PYVER/bin/pip wheel /github/workspace -w /github/workspace/wheels || { echo "Failed while buiding $PYVER wheel"; exit 1; }
